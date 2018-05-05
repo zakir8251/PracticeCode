@@ -64,7 +64,30 @@ void partition_min_sum_diff_subset(){
   
 }
 
+/***********/
 
+bool is_possible(int& A[], int i, int sum){
+  
+  if(i<0 || sum <0) return false;
+  
+  if(A[i] == sum) return true;
+  
+  return is_possible(A, i-1, sum) || is_possible(A, i-1, sum-A[i]);
+  
+}
+  
+void partition_equal_sum_subset(){
+  cout<<"In partition_equal_sum_subset"<<endl;
+  int A[5] = {1,3,4,0,8};
+  int sum = 0;
+  for(auto a: A)
+    sum+=a;
+  
+  cout<<is_possible(A, 4, sum/2);
+  
+}
+
+/************/
 
 
 int main() {

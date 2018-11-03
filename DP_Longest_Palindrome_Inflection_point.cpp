@@ -2,9 +2,7 @@
 using namespace std;
 
 
-
 int longest_palindrome_subsequence(string str, int left, int right){
-  
   //Base Cases - TBD
   if(left == right) return 1;
   if(left > right) return 0;
@@ -43,9 +41,7 @@ void pair_sum_closest_to_x(){
 }
 
 void inflection_point(){
-  
   vector<int> A = {10,20,30,40,50,60,70,600,700,704};
-  
   int left = 0, right=A.size()-1;
   int max_idx = right;
   int mid = left + (right-left)/2;
@@ -73,8 +69,6 @@ int main() {
   //pair_sum_closest_to_x();
   inflection_point();
   string tel = "234";
-  
-
   
   return 0;
 }

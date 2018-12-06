@@ -31,9 +31,9 @@ int main()
 {
 	vector<string> V={"RGI_0.pdf", "RGI_1.pdf", "RGI_2.pdf", "RGI_10.pdf", "RGI_8.pdf", "RGI_50.pdf" };
 	print_container(V); //RGI_0.pdf RGI_1.pdf RGI_2.pdf RGI_10.pdf RGI_8.pdf RGI_50.pdf 
-  sort(V.begin(), V.end(), my_sort_fn);
+        sort(V.begin(), V.end(), my_sort_fn);
 	print_container(V); //RGI_0.pdf RGI_1.pdf RGI_2.pdf RGI_8.pdf RGI_10.pdf RGI_50.pdf 
-  //Solution using labda []
+        //Solution using labda []
 	sort(V.begin(), V.end(), [] (string s1, string s2){return parse_digit(s1) < parse_digit(s2);});
 	print_container(V); //RGI_0.pdf RGI_1.pdf RGI_2.pdf RGI_8.pdf RGI_10.pdf RGI_50.pdf 
 

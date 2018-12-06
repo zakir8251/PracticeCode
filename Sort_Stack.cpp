@@ -39,7 +39,9 @@ void print_stack(stack<int> S){
   
 }
 
-
+/*
+  The goal here is to sort the given stack using recursion
+*/
 int main() {
   
   stack<int> S;
@@ -58,3 +60,18 @@ int main() {
   
   return 0;
 }
+/* Prints:-
+44
+4
+14
+1
+12
+10
+
+1
+4
+10
+12
+14
+44
+*/
